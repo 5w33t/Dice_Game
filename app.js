@@ -19,6 +19,7 @@ var gameplay = true;
 
 function init() {
     if (!gameplay) {
+        activePlayer+=1;
         document.querySelector('#name-' + activePlayer).textContent = 'Player ' + activePlayer;
         document.querySelector('.player-' + activePlayer + '-panel').classList.remove('winner');
         gameplay = true;
